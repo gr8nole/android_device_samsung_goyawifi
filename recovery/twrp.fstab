@@ -1,0 +1,17 @@
+#mount point    fstype          device                   [device2]
+/mrd            emmc            /dev/block/mmcblk0p1
+/mrd1           emmc            /dev/block/mmcblk0p2
+/mep2           emmc            /dev/block/mmcblk0p3
+/efs            ext4            /dev/block/mmcblk0p4 flags=display="EFS";backup=1
+/dtim           emmc            /dev/block/mmcblk0p5
+/recovery       emmc            /dev/block/mmcblk0p9
+/kernel         emmc            /dev/block/mmcblk0p10
+/radio          emmc            /dev/block/mmcblk0p11
+/custom		 ext4		  /dev/block/mmcblk0p12
+/preload        ext4            /dev/block/mmcblk0p13 flags=display="Preload";wipeingui;backup=1
+/cache          ext4            /dev/block/mmcblk0p14
+/system         ext4            /dev/block/mmcblk0p15
+/data           ext4            /dev/block/mmcblk0p16     length=-16384
+#/sdcard        datamedia       /dev/null
+/external_sd    vfat            /dev/block/mmcblk1p1                          /dev/block/mmcblk1 flags=display="Micro SDcard";storage;wipeingui;removable
+
